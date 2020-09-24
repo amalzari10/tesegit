@@ -9,6 +9,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:listener-config>
 	<flow name="testgitFlow" doc:id="e4b576fa-0ac2-4962-82e7-6754136dc080" >
 		<http:listener doc:name="Listener" doc:id="4c389ab0-4593-49ec-aeea-e9a0c0590cfb" config-ref="HTTP_Listener_config" path="/get"/>
+		<logger level="INFO" doc:name="Logger" doc:id="97bb3711-60f2-472a-99be-ea4be880e663" />
 		<logger level="INFO" doc:name="Logger" doc:id="63b8b207-46f7-459f-8370-e2f071b5d8f2" />
 	</flow>
 </mule>
